@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../Fonts/D-DIN.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'D-DIN Bold';
+  src: url('../Fonts/D-DIN-Bold.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url('../Fonts/ARIAL.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    /*========== Font and typography ==========*/
+    --ddin-bold: 'D-DIN Bold';
+    --arial: 'Arial';
+    --ddin-regular: 'D-DIN';
+    --small-font: .9rem;
+    --normal-font: 1.3rem;
+    --heading-font: 3rem;
+    --medium-font: 1.5rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+/*=============== BASE ===============*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+
+}
+ul {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*=============== REUSABLE CLASSES ===============*/
+.container{
+    padding-inline: 3rem;
+}
+.section{
+    padding-block: 5rem 2rem;
+}
+.main{
+    overflow: hidden;
+}
+/*=============== HEADER & NAV ===============*/
+.header{
+    position: fixed;
+    z-index: var(--z-fixed);
+    width: 100%;
+}
+.nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo-img{
+    width: 250px;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.nav_link{
+    text-transform: uppercase;
+    font-size: var(--small-font);
+    font-family: var(--ddin-bold);
+    color: white;
+    transition: text-decoration .3s;
+}
+.nav_link:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.nav_end{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+/*=============== SECTION ===============*/
+.section1{
+    background-image: url("../Images/mars_img.jpg");
+    width: 100%;
+    height: 660px;
+    background-position-x: -200px;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+    background-size: 1800px;
+}
+.section_data{
+    margin-top: 18rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+.section_button{
+    border: 2px solid white;
+    padding: 1rem 3rem;
+    display: inline-block;
+    width: max-content;
+    transition: background-color .4s;
+}
+.section_button:hover{
+    background-color: white;
+}
+.section_button a:hover{
+    color: black;
+}
+.section_button a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--small-font);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color .4;
+}
+.section2{
+    background-image: url("../Images/MTG_S1_astronautrd_DSC_5675_desktop_de44a48f5d.jpg");
+    width: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+}
+.section3{
+    background-image: url("../Images/Axiom_4_outsidehangar_IMG_3412_desktop_f4cf1ef34c.jpg");
+    width: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+}
+.section4{
+    background-image: url("../Images/Flight_9_Website_Desktop_4_f1db4d08ec.jpg");
+    width: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+}
+.section5{
+    background-image: url("../Images/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg");
+    width: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+}
+.section_title{
+    font-family: var(--ddin-bold);
+    font-size: var(--heading-font);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.ection_subtitle{
+    font-family: var(--ddin-regular);
+    font-size: var(--medium-font);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+/*=============== FOOTER ===============*/
+.footer{
+    display: flex;
+    column-gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+}
+.footer_conclude,
+.footer_link{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--small-font);
+}
+.footer_conclude{
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.footer_link{
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: text-decoration .4s;
+}
+.footer_link:hover{
+    text-decoration: underline;
+    text-decoration-color:white;
+}
