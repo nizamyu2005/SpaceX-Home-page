@@ -16,4 +16,4 @@ This is a static HTML and CSS clone of the official SpaceX home page.
 - Include animations or transitions
 - Implement JS for interactivity
 
-##<a href="https://nizamyu2005.github.io/SpaceX-Home-page/">Visit</a>
+## <a href="https://nizamyu2005.github.io/SpaceX-Home-page/">Click to Visit</a>
